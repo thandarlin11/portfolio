@@ -50,7 +50,6 @@ const data = [
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/14399098-Orion-UI-kit-Charts-templates-infographics-in-Figma'
   }
-
 ]
 
 const Portfolio = () => {
@@ -62,14 +61,14 @@ const Portfolio = () => {
         {
           data.map(({id, image, title, github, demo}) => {
             return(
-              <article key = {id}className='portfolio_item'>
+              <article key ={id} className='portfolio_item'>
               <div className="portfolio_item-image">
                 <img src={image} alt= {title}/>
               </div>
               <h3>{title}</h3>
               <div className="portfolio_item-cta">
-                <a href={github} className="btn" target="_blank">Github</a>
-                <a href={demo} className="btn btn-primary" target="_blank">Live Demo</a>
+                <a href={github} className='btn' target='_blank'>Github</a>
+                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
               </div>
             </article>
             )
